@@ -2,11 +2,14 @@
 layout: default
 ---
 <div>
+  {% for cat in site.categories %}
+
+  {% endfor %}
   <ul>
     <li>教案
       <ul>
-        <li> 第一讲 概述 </li>
-        <li> 第二讲 数据表示与数据类型 </li>
+        <li><a href="/cprogramming/教案/第一讲-概述.pdf"> 第一讲 概述 </a> </li>
+        <li><a href="/cprogramming/教案/第二讲-数据表示与数据类型.pdf"> 第二讲 数据表示与数据类型 </li>
       </ul>
     </li>
     <li>作业
