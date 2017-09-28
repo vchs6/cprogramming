@@ -1,6 +1,21 @@
 title: 程序设计语言与方法
 subtitle: C语言程序设计
 description:
-author: vchuoshen-6
+author: 杨喜敏
 language: zh-CN
-timezone: Asia/Shanghai
+TimeZone: Asia/Shanghai
+Encoding: utf-8
+
+BaseURL: /cprogramming
+lsi: true
+
+enable_coderay: true
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
