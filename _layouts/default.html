@@ -35,9 +35,11 @@
           <li class="menuitem"><a href="/cprogramming">首页</a></li>
           <li class="menuitem"><a>导读</a>
             <ul>
+              ｛% for category in site.categories %｝
               <li class="menuitem">
-                <a href="{{ site.BaseURL }}/教案">教案</a>
+                <a href="{{ site.BaseURL }}{{ category | first }}">{{ category | first }}</a>
               </li>
+              {% endfor %}
             </ul>
           </li>
           <li><a href="/cprogramming/about">课程说明</a></li>
