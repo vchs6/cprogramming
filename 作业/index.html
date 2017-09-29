@@ -1,6 +1,7 @@
 ---
+permalink: /作业
 layout: none
-title: 教案
+title: 作业
 ---
 
 <!DOCTYPE html>
@@ -27,16 +28,19 @@ title: 教案
     <div class="contnet wrapper" style="width: 100%">
       <ul>
         {% for category in site.categories %}
-          {% if category.first == '教案' %}
+        <li>{{ category | first }}
+          <ul>
             {% for post in category.last %}
             <li>
-                {{ post.date | date:"%Y年%m月%d日" }}
+                <!-- a href="/cprogramming/教案/{{ post.file }}" -->
+                {{ post.date | date:"%d/%m/%Y" }}
                 <a href="{{ site.BaseURL }}{{ post.url }}">
                   {{ post.title }}
                 </a>
             </li>
             {% endfor %}
-          {% endif %}
+          </ul>
+        </li>
         {% endfor %}
       </ul>
     </div>
