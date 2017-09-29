@@ -15,7 +15,7 @@ layout: default
         <li>
             <!-- a href="/cprogramming/教案/{{ post.file }}" -->
             {{ post.date | date:"%d/%m/%Y" }}
-            <a href="{{ site.BaseURL }}/{{ post.url }}">
+            <a href="{{ site.BaseURL }}{{ post.url }}">
               {{ post.title }}
             </a>
         </li>
