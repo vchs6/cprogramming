@@ -2,15 +2,20 @@
 layout: default
 ---
 <div>
+<!-- 添加分类的名称
   {% for category in site.categories %}
     <p>{{ category | first }}</p>
   {% endfor %}
+-->
   <ul>
-    <li>教案
+    {% for category in site.categories %}
+    <li>{{ category | first }}
       <ul>
-        <li><a href="/cprogramming/教案/第一章-概述.pdf"> 第一章 概述 </a> </li>
-        <li><a href="/cprogramming/教案/第二章-数据表示与数据类型.pdf"> 第二章 数据表示与数据类型 </li>
+        {% for post in category.last %}
+        <li><a href="/cprogramming/教案/{{ post.file }}"> {{ post.title }} </a> </li>
+        {% endfor %}
       </ul>
     </li>
+    {% endfor %}
   </ul>
 </div>
