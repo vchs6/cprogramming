@@ -35,7 +35,7 @@
           <li class="menuitem"><a href="/cprogramming">首页</a></li>
           <li class="menuitem"><a>导读</a>
             <ul>
-              ｛% for category in site.categories %｝
+              {% for category in site.categories %}
               <li class="menuitem">
                 <a href="{{ site.BaseURL }}{{ category | first }}">{{ category | first }}</a>
               </li>
