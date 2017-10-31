@@ -14,7 +14,7 @@ layout: default
         {% for post in category.last %}
         <li>
             <!-- a href="/cprogramming/教案/{{ post.file }}" -->
-            {{ post.date | date:"%d/%m/%Y" }}
+            {{ post.date | date:"%Y年%m月%d日" }}
             <a href="{{ site.BaseURL }}{{ post.url }}">
               {{ post.title }}
             </a>
