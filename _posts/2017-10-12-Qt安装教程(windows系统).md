@@ -4,6 +4,7 @@ layout: post
 title: Qt安装教程(windows系统)
 date: 2017-10-12
 categories: [教程]
+tags: [Qt]
 ---
 
 # Qt安装过程
