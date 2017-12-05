@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>日期与天数换算: p94/dateutils.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">日期与天数换算
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">函数声明、函数定义及函数调用示例（课本第九章习题4）</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.11 -->
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_00e7cdad6e4d915228a6ff2a2f9c9db8.html">p94</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">dateutils.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>日期天数换算函数源程序（函数体定义）。  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="dateutils_8h_source.html">dateutils.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1c5b3bbbf2af82a50e5b7c9f47eeeb2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dateutils_8c.html#a1c5b3bbbf2af82a50e5b7c9f47eeeb2d">leapYear</a> (int year)</td></tr>
+<tr class="memdesc:a1c5b3bbbf2af82a50e5b7c9f47eeeb2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">润年判定  <a href="#a1c5b3bbbf2af82a50e5b7c9f47eeeb2d">更多...</a><br /></td></tr>
+<tr class="separator:a1c5b3bbbf2af82a50e5b7c9f47eeeb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59df1f23199aa8707ec144a61fa195e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dateutils_8c.html#aa59df1f23199aa8707ec144a61fa195e">MonthDays</a> (int year, int month)</td></tr>
+<tr class="memdesc:aa59df1f23199aa8707ec144a61fa195e"><td class="mdescLeft">&#160;</td><td class="mdescRight">求某年某月的天数  <a href="#aa59df1f23199aa8707ec144a61fa195e">更多...</a><br /></td></tr>
+<tr class="separator:aa59df1f23199aa8707ec144a61fa195e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c2d65f9f73e42115fc93446c2f0326d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dateutils_8c.html#a9c2d65f9f73e42115fc93446c2f0326d">DayofYear</a> (int year, int month, int day)</td></tr>
+<tr class="memdesc:a9c2d65f9f73e42115fc93446c2f0326d"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算给定日期是这一年的第几天  <a href="#a9c2d65f9f73e42115fc93446c2f0326d">更多...</a><br /></td></tr>
+<tr class="separator:a9c2d65f9f73e42115fc93446c2f0326d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b8d113969584c51d4fff25f392f220"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dateutils_8c.html#ae8b8d113969584c51d4fff25f392f220">MonthDay</a> (int year, int yearDay, int *pMonth, int *pDay)</td></tr>
+<tr class="memdesc:ae8b8d113969584c51d4fff25f392f220"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算给定的某年的第几天是这一年的第几月第几日。  <a href="#ae8b8d113969584c51d4fff25f392f220">更多...</a><br /></td></tr>
+<tr class="separator:ae8b8d113969584c51d4fff25f392f220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a9c2d65f9f73e42115fc93446c2f0326d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DayofYear </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>day</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>一个表示年份的整数 </td></tr>
+    <tr><td class="paramname">month</td><td>一个表示月份的整数 </td></tr>
+    <tr><td class="paramname">day</td><td>一个表示日的整数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>这一年的第几天 </dd></dl>
+<hr/>
+<p> 给定天数加上给定月份前面月份的天数和，即：从 <code>month-1</code>月 到 1月 求：day += 年月的天数。</p>
+<p><b>示例</b></p><ol type="1">
+<li>2017(year)年3(month)月1(day)日 <blockquote class="doxtable">
+<p>60: ((1 + 28) + 31)；1(day) + 2017(year)年2(month-1)月的天数 + 2017(year)年1月的天数 </p>
+</blockquote>
+</li>
+<li>2017(year)年1(month)月27(day)日 <blockquote class="doxtable">
+<p>27: 27；前面没有月份了，：） </p>
+</blockquote>
+</li>
+</ol>
+<hr/>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="dateutils_8c_a9c2d65f9f73e42115fc93446c2f0326d_cgraph.png" border="0" usemap="#dateutils_8c_a9c2d65f9f73e42115fc93446c2f0326d_cgraph" alt=""/></div>
+<map name="dateutils_8c_a9c2d65f9f73e42115fc93446c2f0326d_cgraph" id="dateutils_8c_a9c2d65f9f73e42115fc93446c2f0326d_cgraph">
+<area shape="rect" id="node2" href="dateutils_8c.html#aa59df1f23199aa8707ec144a61fa195e" title="求某年某月的天数 " alt="" coords="137,5,226,30"/>
+<area shape="rect" id="node3" href="dateutils_8c.html#a1c5b3bbbf2af82a50e5b7c9f47eeeb2d" title="润年判定 " alt="" coords="275,5,349,30"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c5b3bbbf2af82a50e5b7c9f47eeeb2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool leapYear </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>判定给定的年份是否是润年 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>年份。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>真：润年；假：不是润年。 </dd></dl>
+<hr/>
+<p> 非整百年份能被4整除，或整百年份能被400整除时，则该年份是润年，否则，不是润年。</p>
+<p>判定方法：</p><ol type="1">
+<li><code>((year % 100 != 0) &amp;&amp; (year % 4 == 0)) || (year % 400 == 0)</code></li>
+<li><code>(year % (( year % 100 != 0) ? 4 : 400)) != 0</code></li>
+<li><code>!(year % ((year % 100) ? 4 : 400))</code>，结合前一方法获知为何求反的原因（非0为真）</li>
+</ol>
+<hr/>
+
+</div>
+</div>
+<a class="anchor" id="ae8b8d113969584c51d4fff25f392f220"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MonthDay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yearDay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pMonth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pDay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>一个表示年份的整数 </td></tr>
+    <tr><td class="paramname">yearDay</td><td>一个表示这一年第几天的整数 </td></tr>
+    <tr><td class="paramname">pMonth</td><td>一个存储月份的整型变量的地址（出口参数） </td></tr>
+    <tr><td class="paramname">pDay</td><td>一个存储日的整型变量的地址（出口参数） </td></tr>
+  </table>
+  </dd>
+</dl>
+<hr/>
+<p> <b>计算过程</b></p><ol type="1">
+<li>开始；</li>
+<li>*pMonth = 1;</li>
+<li>从1到12月，逐月计算<ol type="a">
+<li>如果yearDay大于当前月的天数，则，<ol type="i">
+<li>将yearDay减去当前月的天数；</li>
+<li>*pMonth = 当前的月份;</li>
+</ol>
+</li>
+<li>否则，<ol type="i">
+<li>*pDay = yearDay;</li>
+<li>停止计算；</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>结束。</li>
+</ol>
+<hr/>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="dateutils_8c_ae8b8d113969584c51d4fff25f392f220_cgraph.png" border="0" usemap="#dateutils_8c_ae8b8d113969584c51d4fff25f392f220_cgraph" alt=""/></div>
+<map name="dateutils_8c_ae8b8d113969584c51d4fff25f392f220_cgraph" id="dateutils_8c_ae8b8d113969584c51d4fff25f392f220_cgraph">
+<area shape="rect" id="node2" href="dateutils_8c.html#aa59df1f23199aa8707ec144a61fa195e" title="求某年某月的天数 " alt="" coords="137,5,226,30"/>
+<area shape="rect" id="node3" href="dateutils_8c.html#a1c5b3bbbf2af82a50e5b7c9f47eeeb2d" title="润年判定 " alt="" coords="275,5,349,30"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa59df1f23199aa8707ec144a61fa195e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MonthDays </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>month</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>1，3，5，7，8，10和12月的天数为31天；4，6，9和11月的天数为30天；润年2月为29天，非润年2月为28天。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>一个表示年份的整数(int) </td></tr>
+    <tr><td class="paramname">month</td><td>一个表示月份的整数(int) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>给定年月的天数 </dd></dl>
+<hr/>
+<p> <em>注：函数没有判别实参的值是否是一个合理的值！！</em></p>
+<p>为了演示如何通过静态成员变量的使用，加速函数的执行。 在函数体的定义中使用了一个12个元素的静态整型数组和一个静态整型变量， 用于存储已设定好的某年的每个月的天数。 </p><blockquote class="doxtable">
+<p>static int _days[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};</p>
+<p>satic int _year = 0; </p>
+</blockquote>
+<p>当且仅当实参中的年份(year)值与已设定好的年份值不同时，才会重新计算二月份的天数并保存。</p>
+<hr/>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="dateutils_8c_aa59df1f23199aa8707ec144a61fa195e_cgraph.png" border="0" usemap="#dateutils_8c_aa59df1f23199aa8707ec144a61fa195e_cgraph" alt=""/></div>
+<map name="dateutils_8c_aa59df1f23199aa8707ec144a61fa195e_cgraph" id="dateutils_8c_aa59df1f23199aa8707ec144a61fa195e_cgraph">
+<area shape="rect" id="node2" href="dateutils_8c.html#a1c5b3bbbf2af82a50e5b7c9f47eeeb2d" title="润年判定 " alt="" coords="145,5,218,30"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
